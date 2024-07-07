@@ -1,28 +1,14 @@
-import { Link, Outlet } from "react-router-dom";
+import { MainChildren } from "@presentation/components/templates";
 import { Suspense } from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
-		<div className="headermenu">
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">home</Link>
-					</li>
-					<li>
-						<Link to="/products">Products</Link>
-					</li>
-					<li>
-						<Link to="/about-us">About Us</Link>
-					</li>
-				</ul>
-			</nav>
-
-			{/* Routes */}
+		<MainChildren>
 			<Suspense>
 				<Outlet />
 			</Suspense>
-		</div>
+		</MainChildren>
 	);
 }
 
