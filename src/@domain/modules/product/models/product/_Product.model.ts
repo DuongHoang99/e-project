@@ -17,6 +17,7 @@ export class Product implements IProduct {
 	readonly code: string;
 	readonly price: string;
 	readonly description: string;
+	readonly thumbnail: string;
 
 	constructor(values?: ConstructableValuesOf<IProduct>) {
 		this.id = values?.id ?? 0;
@@ -26,6 +27,7 @@ export class Product implements IProduct {
 		this.code = values?.code ?? "";
 		this.price = values?.price ?? "";
 		this.description = values?.description ?? "";
+		this.thumbnail = values?.thumbnail ?? "";
 	}
 
 	static fromSchema(values?: Readonly<IProductSchema>) {

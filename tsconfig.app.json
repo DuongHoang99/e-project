@@ -25,6 +25,7 @@
 		"noFallthroughCasesInSwitch": true,
 
 		"paths": {
+			"@assets/*": ["./src/assets/*"],
 			"@core/*": ["./src/@core/*"],
 			"@domain/*": ["./src/@domain/*"],
 			"@presentation/*": ["./src/@presentation/*"]

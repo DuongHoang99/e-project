@@ -6,4 +6,5 @@ export interface IProductSchema {
 	code: string;
 	price: string;
 	description: string;
+	thumbnail: string;
 }

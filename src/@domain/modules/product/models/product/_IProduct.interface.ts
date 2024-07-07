@@ -9,4 +9,5 @@ export interface IProduct {
 	code: string;
 	price: string;
 	description: string;
+	thumbnail: string;
 }
