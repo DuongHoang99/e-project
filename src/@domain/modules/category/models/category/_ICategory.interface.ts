@@ -1,4 +1,4 @@
-export interface IBrandSchema {
+export interface ICategory {
 	id: number;
 	name: string;
 	displayName: string;
